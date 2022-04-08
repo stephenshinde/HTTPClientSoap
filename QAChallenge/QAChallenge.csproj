@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="ExtentReports" Version="4.1.0" />
+    <PackageReference Include="log4net" Version="2.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="System.Net.Http" />
+    <None Remove="XMLModel\" />
+    <None Remove="Test\" />
+    <None Remove="Helpers\" />
+    <None Remove="ExtentReports" />
+    <None Remove="Config\" />
+    <None Remove="Reports\" />
+    <None Remove="log4net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="XMLModel\" />
+    <Folder Include="Test\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Config\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+</Project>
